@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.flag-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.flag-handle {
+  width: 20px;
+  height: 500px;
+  background-color: #200e0e;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  float: left;
+}
+.flag-handle footer {
+  width: 70px;
+  height: 35px;
+  background-color: #200e0e;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rectangle {
+  width: 2.5in;
+  height: 1.5in;
+  background-color: 	#006a4e;
+  float: right;
+  margin-top: 8px;
+  position: relative;
+}
+.circle {
+  height: 1in;
+  width: 1in;
+  border-radius: 50%;
+  background-color: #f42a41;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
